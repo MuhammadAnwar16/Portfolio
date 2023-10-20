@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Portfolio</title>
+
+    <!--custom css link--->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--box icon link--->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--header section--->
+    <header>
+      <a href="#" class="logo"><img src="img/.png" /></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <!--<li><a href="#portfolio">Portfolio</a></li>-->
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <!--hero section--->
+    <section class="home" id="home">
+      <div class="hero-text">
+        <h3>Hello I'm</h3>
+        <h1 id="text"></h1>
+        <h4>From Pakistan</h4>
+        <a href="#" class="btn">My Work</a>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+      <script>
+        var typed = new Typed("#text", {
+          strings: ["Graphic Designer", "Student", "Muhammad Anwar"],
+          typeSpeed: 50,
+        });
+      </script>
+    </section>
+
+    <!--about section--->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/about.png" />
+      </div>
+
+      <div class="about-text">
+        <h2>About me</h2>
+        <h5>
+          I am dynamic creative designer <span>Student and Developer</span>
+        </h5>
+        <p>
+          A Computer Science student at COMSATS University Islamabad. My passion
+          lies in Artificial Intelligence, Machine Learning, and Data Science.
+          I'm committed to gaining real-world experience and contributing to
+          innovative organizations. I and am open to exciting opportunities and
+          collaborations that shape the future of technology and society. Let's
+          connect and collaborate to make a difference!
+        </p>
+        <a href="#" class="btn">Hire Me</a>
+      </div>
+    </section>
+
+    <!--service section--->
+    <section class="service" id="service">
+      <div class="text-center">
+        <h2>My Services</h2>
+        <h4>We Work With You, Not For You</h4>
+      </div>
+
+      <div class="service-item">
+        <div class="service-box">
+          <i class="bx bx-mobile-alt"></i>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+            architecto pariatur quae.
+          </p>
+          <a href="#" class="s-btnn">Read More</a>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+            architecto pariatur quae.
+          </p>
+          <a href="#" class="s-btnn">Read More</a>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-signal-5"></i>
+          <h3>SEO Marketing</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+            architecto pariatur quae.
+          </p>
+          <a href="#" class="s-btnn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!--contact section--->
+    <section class="contact" id="contact">
+      <div class="left-contact">
+        <div class="in">
+          <i class="bx bxl-upwork"></i>
+          <h4>Upwork</h4>
+        </div>
+
+        <div class="in">
+          <i class="bx bxl-github"></i>
+          <h4>Github</h4>
+        </div>
+
+        <div class="in">
+          <i class="bx bxl-behance"></i>
+          <h4>Behance</h4>
+        </div>
+      </div>
+
+      <div class="right-contact">
+        <h2>Profiles</h2>
+        <a href="#">Hire Me</a>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text.
+        </p>
+      </div>
+    </section>
+
+    <!--end section--->
+    <section class="end-section">
+      <h3>Muhammad Anwar</h3>
+      <p>
+        For inquiries and to get in touch, please don't hesitate to reach out
+        through the following contact links:
+      </p>
+      <div class="end-icons">
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"></a>
+      </div>
+    </section>
+
+    <!--scroll btn--->
+    <a href="#" class="scroll-bttn"><i class="bx bx-chevron-up"></i></a>
+
+    <!--scroll reveal--->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--custom js file link--->
+    <script src="script.js"></script>
+  </body>
+</html>
