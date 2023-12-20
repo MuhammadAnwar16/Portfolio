@@ -189,6 +189,7 @@ span{
     border: 1px solid transparent;
     cursor: pointer;
     transition: all ease .50s;
+    height: 650px;
 }
 .service i{
     font-size: 50px;
