@@ -44,8 +44,10 @@ header{
     cursor: pointer;
 }
 .logo img{
-        width: 100%;
+        width: 18%;
         height: auto;
+        border-radius: 10px; 
+        overflow: hidden;
 }
 .navlist{
         display: flex;
