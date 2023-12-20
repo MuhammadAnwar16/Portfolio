@@ -76,16 +76,17 @@ section{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background: url(--anwar.jpeg);
-    background-size: cover;
-    background-position: center;
+    background: url(../img/anwar1.png);
+    background-size: contain; /* or cover, depending on your preference */
+    background-position: right top; /* Align image to the right */
+    background-repeat: no-repeat; /* Prevent image repetition */
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .hero-text h3{
     color: var(--second-color);
-    font-size: 22px;
+    font-size: 50px;
     font-weight: 600;
     margin-bottom: 15px;
     word-spacing: 10px;
@@ -100,7 +101,7 @@ section{
 }
 .hero-text h4{
     color: var(--second-color);
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     word-spacing: 15px;
     margin-bottom: 3.5rem;
