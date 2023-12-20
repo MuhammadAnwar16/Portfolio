@@ -131,8 +131,10 @@ header.sticky{
     gap: 4rem;
 }
 .about-img{
-    width: 100%;
-    height: auto;
+    width: 100%; 
+    height: auto; 
+    border-radius: 100px; 
+    overflow: hidden; 
 }
 .about-text h2{
     font-family: 'Dosis', sans-serif;
