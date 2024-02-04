@@ -80,6 +80,7 @@ background: url('anwar1.png'); /* Corrected image URL */
 background-size: contain; /* or cover, depending on your preference */
 background-position: right top; /* Align image to the right */
 background-repeat: no-repeat; /* Prevent image repetition */
+background-attachment: fixed;
 display: flex;
 align-items: center;
 justify-content: flex-start;
@@ -203,13 +204,16 @@ span{
     font-weight: 700;
     margin-bottom: 12px;
 }
-.service p{
+.service p {
     color: var(--other-color);
     font-size: var(--p-font);
     line-height: 30px;
     margin-bottom: 1.5rem;
+    text-align: center; 
 }
-.s-btnn{
+
+.s-btnn {
+    margin-top: auto; 
     display: inline-block;
     padding: 9px 20px;
     background: var(--main-color);
@@ -285,13 +289,25 @@ span{
     font-size: var(--p-font);
     line-height: 30px;
 }
-.end-section{
+.end-section {
     padding: 80px 19% 70px;
     background: var(--secont-bg-color);
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    position: relative; 
+}
+
+.end-section .copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0; 
+    color: var(--other-color);
+    font-size: var(--p-font);
+    line-height: 30px;
 }
 .end-section h3{
     font-size: 28px;
