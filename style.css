@@ -185,7 +185,11 @@ span{
     text-align: center;
     margin-top: 4rem;
 }
-.service-box{
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 45px 30px;
     background: var(--bg-color);
     border-radius: 0.8rem;
@@ -209,11 +213,11 @@ span{
     font-size: var(--p-font);
     line-height: 30px;
     margin-bottom: 1.5rem;
-    text-align: center; 
+    text-align: center; /* Add this line to center the paragraphs */
 }
 
 .s-btnn {
-    margin-top: auto; 
+    margin-top: auto; /* Push the button to the bottom */
     display: inline-block;
     padding: 9px 20px;
     background: var(--main-color);
@@ -233,7 +237,6 @@ span{
     transform: translateY(-8px);
     border: 1px solid #4e5055;
 }
-
 .contact{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
