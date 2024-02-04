@@ -354,58 +354,62 @@ span{
     border-radius: 0.8rem;
 }
 
-@media (max-width:1600px){
-    header{
+@media (max-width: 1600px) {
+    header {
         padding: 14px 4%;
     }
-    header.sticky{
+    header.sticky {
         padding: 8px 4%;
     }
-    section{
+    section {
         padding: 100px 5% 80px;
     }
 }
-@media (max-width:1200px){
-    .home{
+
+@media (max-width: 1200px) {
+    .home {
         min-height: 90vh;
     }
-    .navlist a{
-        margin: 0 20px;
+    .navlist a {
+        margin: 0 10px;
     }
-    :root{
-        --h1-font: 5rem;
-        --h2-font: 3.1rem;
+    :root {
+        --h1-font: 4.5rem;
+        --h2-font: 3rem;
         --p-font: 1rem;
     }
 }
-@media (max-width:1060px){
-    .about{
+
+@media (max-width: 1060px) {
+    .about {
         grid-template-columns: 1fr;
     }
-    .about-img{
+    .about-img {
         text-align: center;
         border: 2;
     }
-    .about-img img{
+    .about-img img {
         max-width: 100%;
-        width: 600px;
         height: auto;
+        margin: 0 auto;
     }
-    .service-item{
-        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    .service-item {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
     }
-    .contact{
+    .contact {
         grid-template-columns: 1fr;
     }
-    .left-contact{
+    .left-contact {
         margin: auto;
     }
 }
-@media (max-width:870px){
-    #menu-icon{
+
+@media (max-width: 870px) {
+    #menu-icon {
         display: block;
     }
-    .navlist{
+    .navlist {
         position: absolute;
         top: -800px;
         right: 0;
@@ -417,70 +421,72 @@ span{
         text-align: left;
         transition: all .50s ease;
     }
-    .navlist a{
+    .navlist a {
         display: block;
-        font-size: 22px;
+        font-size: 16px;
         padding: 12px 0;
     }
-    .navlist.open{
+    .navlist.open {
         top: 100%;
     }
 }
-@media (max-width:660px){
-   .home{
+
+@media (max-width: 660px) {
+    .home {
         min-height: 80vh;
     }
-    :root{
-        --h1-font: 3.8rem;
-        --h2-font: 2.7rem;
-        --p-font: 15px;
-    }
-        .hero-text h3 {
-          margin-top: 45px; /* Adjust as needed */
-          font-size: 22px;
-          word-spacing: 10px;
-          margin-bottom: 0px;
-        opacity: 0.7;
-        }
-      
-        .hero-text h1 {
-          margin-top: 5px; /* Adjust as needed */
-          font-size: 50px;
-          word-spacing: 10px;
-          margin-bottom: 5px;
-            opacity: 0.6;
-        }
-      
-        .hero-text h4 {
-          margin-top: 10px; /* Adjust as needed */
-          font-size: 14px;
-        word-spacing: 5px;
-        margin-bottom: 20px;
-            opacity: 0.7;
-        }
-        
-    .btn{
-        padding: 5px 30px;
-        margin-bottom: 80px;
-    }
-    .left-contact{
-        gap: 3rem;
-    }
-    .in i{
-        font-size: 80px;
-    }
-    .in h4{
-        font-size: 20px;
-    }
-}
-@media (max-width:460px){
-    :root{
+    :root {
         --h1-font: 3.5rem;
         --h2-font: 2.5rem;
+        --p-font: 14px;
     }
-    .hero-text h4{
+    .hero-text h3 {
+        margin-top: 25px;
+        font-size: 18px;
+        word-spacing: 5px;
+        margin-bottom: 0px;
+        opacity: 0.8;
+    }
+    .hero-text h1 {
+        margin-top: 5px;
+        font-size: 40px;
+        word-spacing: 8px;
+        margin-bottom: 5px;
+        opacity: 0.7;
+    }
+    .hero-text h4 {
+        margin-top: 10px;
+        font-size: 12px;
+        word-spacing: 4px;
+        margin-bottom: 15px;
+        opacity: 0.8;
+    }
+    .btn {
+        padding: 5px 20px;
+        margin-bottom: 40px;
+    }
+    .left-contact {
+        gap: 1.5rem;
+    }
+    .in i {
+        font-size: 50px;
+    }
+    .in h4 {
         font-size: 16px;
-        word-spacing: 7px;
-        
     }
+}
+
+@media (max-width: 460px) {
+    :root {
+        --h1-font: 3rem;
+        --h2-font: 2rem;
+    }
+    .hero-text h4 {
+        font-size: 14px;
+        word-spacing: 5px;
+    }
+}
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
