@@ -490,3 +490,34 @@ span{
 body {
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
+ /* New styles for resume.html specific to mobile views */
+ @media (max-width: 870px) {
+    .end-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .end-icons a {
+      margin: 0 0px; /* Adjust spacing between icons */
+    }
+  }
+
+  @media (max-width: 660px) {
+    .content-container {
+        margin: 65px auto 25px;
+    padding: 20px; /* Adjust padding as needed */
+      width: 90%;
+      min-width: 80px; /* Set a minimum width for better visibility */
+    }
+    
+  }
+
+  @media (max-width: 460px) {
+    .content-container {
+        margin: 65px auto 25px;
+        padding: 20px; /* Adjust padding as needed */
+      width: 90%;
+      min-width: 100px; /* Set a minimum width for better visibility */
+    }
+  }
