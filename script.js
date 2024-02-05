@@ -31,22 +31,4 @@ sr.reveal('.left-contact',{origin:'left'});
 sr.reveal('.right-contact',{origin:'right'});
 sr.reveal('.end-section',{origin:'top'});
 
-document.getElementById("downloadCV").addEventListener("click", function() {
-    // Create an invisible anchor element
-    var link = document.createElement("a");
 
-    // Set the href attribute to the path of your PDF file
-    link.href = "@Resume.pdf";
-
-    // Set the download attribute with the desired file name
-    link.download = "Muhammad_Anwar_CV.pdf";
-
-    // Append the anchor element to the document
-    document.body.appendChild(link);
-
-    // Trigger a click event on the anchor element to start the download
-    link.click();
-
-    // Remove the anchor element from the document
-    document.body.removeChild(link);
-});
