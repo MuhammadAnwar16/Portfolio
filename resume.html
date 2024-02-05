@@ -39,7 +39,7 @@
         padding: 20px; /* Adjust padding as needed */
       }
 
-        /* Styles for desktop and larger screens */
+      /* Styles for desktop and larger screens */
       .content-container {
         width: 80%;
         margin: 40px auto 20px;
@@ -96,7 +96,7 @@
       .content-container {
         margin-top: 80px; /* Default margin-top for all screens */
       }
-      header {
+       header {
         transition: background-color 0.3s ease;
       }
 
@@ -142,9 +142,6 @@
           <a href="https://www.linkedin.com/in/muhammad-anwar16"
             ><i class="bx bxl-linkedin-square"></i
           ></a>
-          <a href="https://www.instagram.com/_http.anwar16"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
           <a href="https://twitter.com/_ANWAR_16"
             ><i class="bx bxl-twitter"></i
           ></a>
@@ -164,6 +161,22 @@
   
       <!--custom js file link--->
       <script src="script.js"></script>
+
+    <script>
+      // JavaScript to toggle the black background on the navigation bar
+      window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Adjust the threshold as needed
+        var threshold = 200;
+
+        if (scrollPosition > threshold) {
+          document.querySelector('header').classList.add('nav-black');
+        } else {
+          document.querySelector('header').classList.remove('nav-black');
+        }
+      });
+    </script>
     </body>
   </html>
   
