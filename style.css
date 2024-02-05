@@ -521,3 +521,6 @@ body {
       min-width: 100px; /* Set a minimum width for better visibility */
     }
   }
+.content-container {
+        margin-top: 80px; /* Default margin-top for all screens */
+      }
