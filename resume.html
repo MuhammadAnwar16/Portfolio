@@ -38,6 +38,61 @@
         margin: 40px auto 20px;
         padding: 20px; /* Adjust padding as needed */
       }
+
+      /* Styles for desktop and larger screens */
+      .content-container {
+        width: 80%;
+        margin: 40px auto 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background-color: #fff;
+        text-align: center;
+      }
+
+      .download-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      /* Styles for tablets and larger screens */
+      @media only screen and (min-width: 768px) {
+        .content-container {
+          width: 70%;
+        }
+
+        .end-icons {
+          display: flex;
+          justify-content: center;
+        }
+
+        .end-icons a {
+          margin: 0 2px; /* Adjust spacing between icons */
+        }
+      }
+
+      /* Styles for smaller screens (e.g., phones) */
+      @media only screen and (max-width: 767px) {
+        .content-container {
+          width: 90%;
+          margin: 20px auto;
+          padding: 15px;
+        }
+
+        .end-icons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .end-icons a {
+          margin: 0 0px; /* Adjust spacing between icons */
+        }
+      }
     </style>
   </head>
   <body>
